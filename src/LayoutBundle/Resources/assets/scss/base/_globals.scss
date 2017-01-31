@@ -1,5 +1,11 @@
 @import "../helper/variables";
 
+html {
+    // normalize font size, so that 1rem = 10px
+    font-size: 62.5%;
+    height: 100%;
+}
+
 h1,
 h2,
 h3 {
