@@ -6,9 +6,11 @@ parameters:
     database_password: root
 
     # Mailer config
-    dev_delivery_address: ~
-
-    locale:            de
+    mailer_host:          127.0.0.1
+    dev_delivery_address: monitoring@becklyn.com
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    # Monitoring config
+    becklyn.monitoring.api_key: ~

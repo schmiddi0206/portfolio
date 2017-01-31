@@ -1,12 +1,18 @@
+# Security related routes
+#login:
+#    path: /login/
+#    defaults:
+#        _controller: "BecklynRadBundle:Security:login"
+#        template: "@your/template/here.html.twig"
+#
+#logout:
+#    path: /logout/
+#
+#_login_check:
+#    path: /login/check/
+
+
+# App routes
 app:
     resource: "@AppBundle/Resources/config/routing.yml"
     prefix: /
-
-#login:
-#    path: /admin/login/
-#
-#logout:
-#    path: /admin/logout/
-#
-#login_check:
-#    path: /admin/login/check/

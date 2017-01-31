@@ -2,19 +2,26 @@ security:
     providers:
         in_memory:
             memory: ~
-
-    encoders:
-        Symfony\Component\Security\Core\User\User:
-            algorithm: bcrypt
-            cost: 12
+#        db:
+#            entity:
+#                class: "AppBundle:User"
+#                property: email
+#
+#    encoders:
+#        AppBundle\Entity\User:
+#            algorithm: bcrypt
+#            cost: 12
 
     firewalls:
+
+        # disables authentication for assets and the profiler
         dev:
-            pattern: ^/(_(profiler|wdt|error)|css|images|js|assets|bundles)/
+            pattern: ^/(_(profiler|wdt)|css|images|js|bundles)/
             security: false
 
+        # Disable security for login page
 #        login:
-#            pattern: ^/admin/login/?$
+#            pattern: ^/login/?$
 #            security: false
 
         secured_area:
@@ -22,12 +29,12 @@ security:
             anonymous: ~
 #            form_login:
 #                login_path:          login
-#                check_path:          login_check
+#                check_path:          _login_check
 #                default_target_path: admin
-#                username_parameter: "login[username]"
-#                password_parameter: "login[password]"
-#                csrf_parameter:     "login[_token]"
-#                intention:          authenticate
+#                username_parameter: "appLogin[username]"
+#                password_parameter: "appLogin[password]"
+#                csrf_parameter:     "appLogin[_token]"
+#                csrf_token_id:      authenticate
 #                remember_me:        true
 #            logout:
 #                path:   logout

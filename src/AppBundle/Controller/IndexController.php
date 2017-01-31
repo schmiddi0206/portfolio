@@ -2,20 +2,22 @@
 
 namespace AppBundle\Controller;
 
-use Becklyn\RadBundle\Controller\BaseController;
-use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 
 /**
  *
  */
-class IndexController extends BaseController
+class IndexController extends Controller
 {
     /**
      * Displays the homepage
+     *
+     * @Template()
      */
     public function homepageAction()
     {
-        return new Response("Becklyn web project");
+        return [];
     }
 }

@@ -1,4 +1,5 @@
 homepage:
     path: /
     defaults:
-        _controller: AppBundle:Index:homepage
+        _controller: "AppBundle:Index:homepage"
+    methods: [GET]
