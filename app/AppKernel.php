@@ -23,6 +23,7 @@ class AppKernel extends Kernel
             new \Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new \Becklyn\RadBundle\BecklynRadBundle(),
             new \Becklyn\BugsnagBundle\BecklynBugsnagBundle(),
+            new \Becklyn\GluggiBundle\GluggiBundle(),
             // endregion
 
             // region Application bundles

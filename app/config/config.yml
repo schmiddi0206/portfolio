@@ -57,3 +57,9 @@ swiftmailer:
     username:  ~
     password:  ~
     spool:     { type: memory }
+
+gluggi:
+    css:
+        - "portfolio.css"
+    js:
+        - "portfolio.js"
