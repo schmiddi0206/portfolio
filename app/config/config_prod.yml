@@ -1,0 +1,45 @@
+imports:
+    - { resource: config.yml }
+
+#framework:
+#    validation:
+#        cache: apc
+
+#doctrine:
+#    orm:
+#        metadata_cache_driver: apc
+#        result_cache_driver: apc
+#        query_cache_driver: apc
+
+
+monolog:
+    handlers:
+        # web requests: logging to local file and buffered logging to HipChat & email monitoring
+        main:
+            type:         fingers_crossed
+            action_level: critical
+            handler:      top_level_group
+        top_level_group:
+            type:    group
+            members: [local_log_file, remote_buffered]
+
+        # local logging: direct to log file
+        local_log_file:
+            type:  stream
+            path:  %kernel.logs_dir%/%kernel.environment%.log
+            level: error
+
+        # remote logging: buffered for email
+        remote_buffered:
+            type:    buffer
+            handler: remote_mail
+        remote_mail:
+            type:       swift_mailer
+            from_email: "error@becklyn.com"
+            to_email:   "monitoring+portfolio@becklyn.com"
+            subject:    "CRITICAL ERROR in portfolio"
+            level:      debug
+
+        # console logging
+        console:
+            type:  console

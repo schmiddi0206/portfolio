@@ -1,0 +1,23 @@
+/web/bundles/
+/app/config/parameters.yml
+/var/cache/*
+/var/logs/*
+/var/sessions/*
+/var/bootstrap.php.cache
+!/var/cache/.gitkeep
+!/var/logs/.gitkeep
+!/var/sessions/.gitkeep
+/phpunit.xml
+
+
+# Build & Deploy
+/deploy
+node_modules
+/vendor/
+
+
+# Debug
+*.css.map
+
+
+# Project specific config

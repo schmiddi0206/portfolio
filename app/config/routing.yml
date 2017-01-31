@@ -1,0 +1,12 @@
+app:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix: /
+
+#login:
+#    path: /admin/login/
+#
+#logout:
+#    path: /admin/logout/
+#
+#login_check:
+#    path: /admin/login/check/
