@@ -28,6 +28,7 @@ class AppKernel extends Kernel
 
             // region Application bundles
             new \AppBundle\AppBundle(),
+            new \LayoutBundle\LayoutBundle(),
             // endregion
         ];
 
