@@ -1,0 +1,7 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <div class="timeline">
+        {% for i in 1..6 %}
+            {% include '@Layout/atom/timeline-entry.html.twig' with {'raw': true} %}
+        {% endfor %}
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}
