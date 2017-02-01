@@ -1,0 +1,93 @@
+@import "../helper/mixins";
+@import "../helper/variables";
+
+.timeline-entry {
+    $dot-size: 16px;
+
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+
+    .entry-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    time {
+        color: $accent;
+        font-size: 1.6rem;
+    }
+
+    strong {
+        display: block;
+    }
+
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    @include on-min-width($tablet-width) {
+        width: calc(50% + 1px);
+        max-width: 100%;
+
+        .content {
+            margin-top: -($dot-size / 2 + 1px);
+        }
+
+        .entry-header {
+            flex-direction: column;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -($dot-size / 2 + 1px);
+            height: $dot-size;
+            width: $dot-size;
+            border-radius: 50%;
+            background-color: $accent;
+        }
+
+        &:nth-child(odd) {
+            border-left-color: $accent;
+
+            &::before {
+                left: -($dot-size / 2 + 1px);
+            }
+
+            .content {
+                padding-left: 8rem;
+            }
+
+            .entry-header {
+                align-items: flex-start;
+            }
+        }
+
+        &:nth-child(even) {
+            border-right-color: $accent;
+
+            &::before {
+                right: -($dot-size / 2 + 1px);
+            }
+
+            .content {
+                text-align: right;
+                padding-right: 8rem;
+            }
+
+            .entry-header {
+                align-items: flex-end;
+            }
+        }
+
+        &:last-child {
+            border-color: transparent;
+        }
+    }
+}

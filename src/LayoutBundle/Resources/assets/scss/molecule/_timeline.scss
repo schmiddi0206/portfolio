@@ -1,0 +1,26 @@
+.timeline {
+    width: 100%;
+    max-width: 100rem;
+    padding: 0 1rem;
+
+    .timeline-entry + .timeline-entry {
+        margin-top: 3rem;
+    }
+
+    @include on-min-width($tablet-width) {
+        display: flex;
+        flex-direction: column;
+
+        .timeline-entry {
+            align-self: flex-end;
+
+            + .timeline-entry {
+                margin-top: 0;
+            }
+
+            &:nth-child(even) {
+                align-self: flex-start;
+            }
+        }
+    }
+}
