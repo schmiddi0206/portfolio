@@ -9,10 +9,12 @@ $color-gray: #939dab;
 // Secondary Colors
 $color-green: #00d646;
 $color-blue: #091330;
+// endregion
 
 // region App Colors
 // Accent
 $accent: $color-green;
+$complementary: $color-light;
 
 // Text
 $color-text: $color-light;
@@ -26,3 +28,10 @@ $navigation-text: $color-gray;
 
 // Shadow
 $shadow: #2f2e2e;
+// endregion
+
+// region Responsive
+$tablet-width: 76.8rem;
+$desktop-width: 102.4rem;
+$big-desktop-width: 128rem;
+// endregion
