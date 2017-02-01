@@ -1,1 +1,21 @@
 @import "node_modules/samos/mixins.scss";
+
+@mixin roboto-regular() {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+@mixin roboto-medium() {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+@mixin roboto-bold() {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+@mixin roboto-black() {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}

@@ -1,6 +1,8 @@
 @import "../helper/variables";
+@import "../helper/_mixins.scss";
 
 html {
+    @include roboto-regular();
     // normalize font size, so that 1rem = 10px
     font-size: 62.5%;
     height: 100%;
