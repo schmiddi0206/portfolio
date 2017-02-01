@@ -1,0 +1,36 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+nav {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 0;
+    height: 7.6rem;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: transparent;
+    box-shadow: 0 .4rem 2.7rem rgba($shadow, .15);
+
+    @include on-min-width($tablet-width) {
+        height: 6.9rem;
+        padding: 0;
+    }
+
+    .navigation {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+
+        @include on-min-width($tablet-width) {
+            justify-content: center;
+            width: 98rem;
+        }
+    }
+}
