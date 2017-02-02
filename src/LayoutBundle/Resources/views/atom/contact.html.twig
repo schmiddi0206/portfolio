@@ -1,0 +1,51 @@
+{% if raw is not defined or not raw %}<div style="width: 100vw; transform: translateY(200px);margin-bottom: 100px;">{% endif %}
+    <div class="contact">
+        <div class="content-container">
+            <div class="content-row">
+                <div class="content">
+                    <h3>CONTACT</h3>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </p>
+                    <p>
+                        <a href="#">info@mysite.com</a><br>
+                        Tel: 1-800-000-0000
+                    </p>
+                </div>
+                <form class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail" placeholder="E-Mail-Adresse">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Betreff">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Nachricht"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="button">Abschicken</button>
+                    </div>
+                </form>
+            </div>
+            <div class="content-row">
+                <ul class="social">
+                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-linkedin.png") }}" alt=""></a></li>
+                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-tumblr.png") }}" alt=""></a></li>
+                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-gplus.png") }}" alt=""></a></li>
+                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-twitter.png") }}" alt=""></a></li>
+                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-instagram.png") }}" alt=""></a></li>
+                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-facebook.png") }}" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}

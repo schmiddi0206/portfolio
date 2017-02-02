@@ -10,6 +10,7 @@ html {
 body {
     @include roboto-regular();
     font-size: 1.6rem;
+    color: $color-text;
 }
 
 h1,
