@@ -1,0 +1,8 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <footer>
+        <div class="footer">
+            {% include '@Layout/atom/logo.html.twig' with {'raw': true} %}
+            {% include '@Layout/atom/copyright.html.twig' with {'raw': true} %}
+        </div>
+    </footer>
+{% if raw is not defined or not raw %}</div>{% endif %}

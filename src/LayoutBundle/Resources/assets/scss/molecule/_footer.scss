@@ -1,0 +1,39 @@
+@import "../helper/mixins";
+@import "../helper/variables";
+
+footer {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    height: 15.3rem;
+    width: 100%;
+    text-align: center;
+    background-color: $color-gray-dark;
+    box-shadow: 0 .4rem 2.7rem rgba($shadow, .15);
+
+    @include on-min-width($tablet-width) {
+        height: 11.4rem;
+        background-color: $color-primary;
+    }
+
+    .footer {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+
+        @include on-min-width($tablet-width) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 6rem;
+        }
+
+        @include on-min-width($desktop-width) {
+            width: 98rem;
+        }
+    }
+}

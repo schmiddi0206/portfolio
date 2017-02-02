@@ -5,12 +5,14 @@
 @import "base/global";
 
 // Atom
+@import "atom/copyright";
 @import "atom/hamburger";
 @import "atom/logo";
 @import "atom/navigation-items";
 @import "atom/timeline-entry";
 
 // Molecule
+@import "molecule/footer";
 @import "molecule/navigation";
 @import "molecule/timeline";
 
