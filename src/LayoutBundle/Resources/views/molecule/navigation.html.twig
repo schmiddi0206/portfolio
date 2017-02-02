@@ -1,0 +1,9 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <nav>
+        <div class="navigation">
+            {% include '@Layout/atom/logo.html.twig' with {'raw': true} %}
+            {% include '@Layout/atom/navigation-items.html.twig' with {'raw': true} %}
+            {% include '@Layout/atom/hamburger.html.twig' with {'raw': true} %}
+        </div>
+    </nav>
+{% if raw is not defined or not raw %}</div>{% endif %}

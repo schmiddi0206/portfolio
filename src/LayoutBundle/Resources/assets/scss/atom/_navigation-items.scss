@@ -1,0 +1,53 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+.navigation-items {
+    display: none;
+    list-style: none;
+
+    @include on-min-width($tablet-width) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        display: block;
+        vertical-align: middle;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        color: $complementary;
+        text-align: center;
+        text-transform: uppercase;
+        transition: color .4s ease 0s;
+
+        @include on-min-width($tablet-width) {
+            display: table-cell;
+            height: 5rem;
+            padding: 0 1rem;
+            font-size: 1.2rem;
+            color: $navigation-text;
+        }
+
+        &.is-active {
+            color: $accent;
+        }
+    }
+
+    &.is-active {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        padding-top: 10rem;
+        background: $color-primary;
+
+        a {
+            background: $color-primary;
+        }
+    }
+}
