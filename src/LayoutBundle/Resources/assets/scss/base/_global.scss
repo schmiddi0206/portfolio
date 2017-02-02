@@ -16,7 +16,20 @@ body {
 h1,
 h2,
 h3 {
+    @include roboto-bold();
     text-transform: uppercase;
+    line-height: 1.4em;
+
+    span,
+    a {
+        color: $complementary;
+    }
+
+    a {
+        &::after {
+            content: " >";
+        }
+    }
 }
 
 h1 {
@@ -28,7 +41,9 @@ h2 {
 }
 
 h3 {
+    @include roboto-regular();
     font-size: 2.4rem;
+    margin-top: 2rem;
 }
 
 p {
