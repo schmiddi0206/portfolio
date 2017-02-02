@@ -6,6 +6,7 @@ $color-white: #fff;
 $color-light: #bec7d5;
 $color-gray: #939dab;
 $color-gray-dark: #757a89;
+$color-danger: #d9534f;
 
 // Secondary Colors
 $color-green: #00d646;
@@ -18,7 +19,7 @@ $accent: $color-green;
 $complementary: $color-light;
 
 // Text
-$color-text: $color-light;
+$color-text: $color-white;
 $color-text-inverted: $color-dark;
 
 // Background
