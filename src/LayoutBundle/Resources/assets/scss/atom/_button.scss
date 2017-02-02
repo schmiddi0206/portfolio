@@ -5,10 +5,10 @@
     @include invisible-button();
     @include roboto-regular();
     background-color: $accent;
-    border: 1px solid $accent;
+    border: .1rem solid $accent;
     color: $color-text-inverted;
     padding: 1.5rem;
-    min-width: 200px;
+    min-width: 20rem;
 
     &.button-primary {
         background-color: transparent;
