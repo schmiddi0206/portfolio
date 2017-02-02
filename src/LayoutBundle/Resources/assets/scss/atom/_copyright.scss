@@ -1,0 +1,15 @@
+@import "../helper/mixins";
+@import "../helper/variables";
+
+.copyright {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $color-text;
+    margin: 1.5rem 0 0;
+
+    @include on-min-width($tablet-width) {
+        font-size: 1.4rem;
+        margin: 0 auto;
+        padding-right: 13.5rem;
+    }
+}

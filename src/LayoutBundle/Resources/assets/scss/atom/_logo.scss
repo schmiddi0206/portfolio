@@ -1,0 +1,25 @@
+@import "../helper/mixins";
+@import "../helper/variables";
+
+.logo {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: .3rem 0 0 0 $accent;
+
+    @include on-min-width($tablet-width) {
+        margin: 0 9.5rem 0 0;
+        justify-self: flex-start;
+    }
+
+    a {
+        font-size: 2rem;
+        color: $accent;
+        text-transform: uppercase;
+    }
+}
