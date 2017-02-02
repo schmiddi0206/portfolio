@@ -1,0 +1,16 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <div class="content-block">
+        <div class="content-container">
+            <div class="content-row">
+                <div class="content">
+                    {% include '@Layout/atom/logo.html.twig' with {'raw': true} %}
+                    <p>
+                        I'M A PARAGRAPH. CLICK HERE TO ADD YOUR OWN TEXT AND EDIT ME.
+                        IT’S EASY. JUST CLICK “EDIT TEXT” OR DOUBLE CLICK ME TO ADD YOUR OWN CONTENT AND MAKE CHANGES TO THE FONT. FEEL FREE TO DRAG AND DROP ME ANYWHERE YOU LIKE ON YOUR PAGE.
+                    </p>
+                    <a href="" target="_blank" class="button button-primary">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}
