@@ -1,3 +1,5 @@
-<div class="logo">
-    <a href="">R</a>
-</div>
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <div class="logo">
+        <a href="">R</a>
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}
