@@ -1,5 +1,5 @@
-@import "../helper/variables";
 @import "../helper/mixins";
+@import "../helper/variables";
 
 .logo {
     display: flex;
@@ -8,11 +8,13 @@
     justify-content: center;
     height: 4rem;
     width: 4rem;
+    margin: 0 auto;
     border-radius: 50%;
     box-shadow: .3rem 0 0 0 $accent;
 
     @include on-min-width($tablet-width) {
-        margin-right: 9.5rem;
+        margin: 0 9.5rem 0 0;
+        justify-self: flex-start;
     }
 
     a {
