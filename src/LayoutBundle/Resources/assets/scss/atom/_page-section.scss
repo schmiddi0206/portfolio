@@ -1,0 +1,42 @@
+@import "../helper/mixins";
+@import "../helper/variables";
+
+.page-section {
+    width: 100%;
+    position: relative;
+
+    .headline {
+        margin: 9rem 0 5rem;
+
+        h2 {
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 0 3.6rem;
+
+            br {
+                display: inline-block;
+
+                @include on-min-width($tablet-width) {
+                    display: none;
+                }
+            }
+        }
+
+        @include on-min-width($tablet-width) {
+            margin: 20rem 0 10rem;
+        }
+    }
+
+    &.timeline-section {
+        background: url("../img/timeline-bg.png") rgba(51, 59, 80, 1) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+        @include on-min-width($desktop-width) {
+            padding-bottom: 40rem;
+        }
+    }
+}
