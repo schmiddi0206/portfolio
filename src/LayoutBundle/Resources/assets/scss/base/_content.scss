@@ -4,7 +4,7 @@
         letter-spacing: .04em;
     }
 
-    *:last-child {
+    *:last-child:not(.button) {
         padding-bottom: 0;
     }
 }

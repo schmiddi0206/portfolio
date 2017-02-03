@@ -1,0 +1,63 @@
+@import "../helper/variables";
+@import "../helper/_mixins.scss";
+
+.content-block {
+    padding: 3rem 1rem 0;
+
+    .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 6rem 3.5rem;
+        text-align: center;
+        background-color: $color-primary;
+        box-shadow: 0 .1rem 2.5rem .4rem rgba($shadow,0.3);
+
+        @include on-min-width($tablet-width) {
+            padding: 10.5rem 0 14rem;
+            width: 74rem;
+        }
+
+        @include on-min-width($desktop-width) {
+            width: 82rem;
+        }
+    }
+
+    p {
+        width: 100%;
+        padding: 0;
+        line-height: 2.5em;
+        text-transform: uppercase;
+        word-wrap: break-word;
+
+        @include on-min-width($tablet-width) {
+            padding: 1.5rem;
+            width: 52.5rem;
+        }
+    }
+
+    .logo {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto 5rem;
+        padding: 0;
+
+        @include on-min-width($tablet-width) {
+            margin: 0 auto 4rem;
+        }
+
+        a {
+            font-size: 5rem;
+            line-height: 1.4em;
+        }
+    }
+
+    .button {
+        margin-top: 5rem;
+
+        @include on-min-width($tablet-width) {
+            margin-top: 6.7rem;
+        }
+    }
+}

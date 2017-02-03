@@ -8,6 +8,8 @@
     border: .1rem solid $accent;
     color: $color-text-inverted;
     padding: 1.5rem;
+    display: inline-block;
+    transition: border-color .4s ease 0s, background-color .4s ease 0s;
     min-width: 20rem;
 
     &.button-primary {
