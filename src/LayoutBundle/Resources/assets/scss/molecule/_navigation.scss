@@ -28,10 +28,6 @@ nav {
         width: 100%;
         margin: 0 auto;
 
-        @include on-min-width($tablet-width) {
-            width: 60rem;
-        }
-
         @include on-min-width($desktop-width) {
             width: 98rem;
         }
@@ -40,6 +36,12 @@ nav {
     .navigation-items {
         @include on-min-width($tablet-width) {
             margin: 0 auto;
+        }
+    }
+
+    .logo {
+        @include on-min-width($tablet-width) {
+            margin-left: 1rem;
         }
     }
 }
