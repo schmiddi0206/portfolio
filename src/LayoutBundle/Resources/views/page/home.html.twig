@@ -1,0 +1,29 @@
+{% include '@Layout/molecule/navigation.html.twig' with {'raw': true} %}
+
+<section class="page-section">
+    <div class="headline">
+        <h2><span>01</span> Professional</h2>
+        <h3>My knowledge level in software</h3>
+    </div>
+</section>
+
+<section class="page-section timeline-section">
+    <div class="headline">
+        <h2><span>02</span> Portfolio</h2>
+        <h3>My latest work. <br><a href="">See More</a></h3>
+    </div>
+
+    {% include '@Layout/molecule/portfolio-block.html.twig' with {'raw': true} %}
+
+    <div class="headline">
+        <h2><span>03</span> Experience</h2>
+    </div>
+
+    {% include '@Layout/molecule/timeline.html.twig' with {'raw': true} %}
+</section>
+
+<section class="page-section contact-section">
+    {% include '@Layout/atom/contact.html.twig' with {'raw': true} %}
+</section>
+
+{% include '@Layout/molecule/footer.html.twig' with {'raw': true} %}

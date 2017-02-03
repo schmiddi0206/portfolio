@@ -4,30 +4,17 @@
     display: block;
     text-align: center;
     width: 100%;
-    padding: 10rem 2rem;
-    background-color: $color-primary;
+    padding: 0 2rem;
 
     @include on-min-width($tablet-width) {
-        padding: 20rem 2rem;
-    }
-
-    h3 {
-        padding: 0 3.6rem;
-
-        br {
-            display: inline-block;
-
-            @include on-min-width($tablet-width) {
-                display: none;
-            }
-        }
+        padding: 0;
     }
 
     .content {
         max-width: 48rem;
-        margin: 9rem auto 0;
         text-align: center;
         background-color: $color-primary;
+        margin: 0 auto;
         box-shadow: 0 .1rem 2.5rem .4rem rgba($shadow, .3);
 
         @include on-min-width($tablet-width) {
@@ -38,6 +25,7 @@
             min-width: initial;
             max-width: none;
             width: 74rem;
+            margin: 0 auto;
         }
 
         @include on-min-width($desktop-width) {
