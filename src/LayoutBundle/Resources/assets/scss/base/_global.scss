@@ -11,6 +11,14 @@ body {
     @include roboto-regular();
     font-size: 1.6rem;
     color: $color-text;
+
+    &.is-active {
+        overflow: hidden;
+
+        @include on-min-width($tablet-width) {
+            overflow: visible;
+        }
+    }
 }
 
 h1,
