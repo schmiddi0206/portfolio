@@ -1,0 +1,25 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <div class="portfolio-block">
+        <h2>
+            <span>02</span>
+            Portfolio
+        </h2>
+        <h3>
+            My latest <br/>work.
+            <a href="">See More</a>
+        </h3>
+        <div class="content-container">
+            <div class="content">
+                <a href="">
+                    <img src="{{ asset("bundles/layout/img/portfolio/deep.webp") }}" alt="" />
+                </a>
+                <a href="">
+                    <img src="{{ asset("bundles/layout/img/portfolio/desktop.gif") }}" alt="" />
+                </a>
+                <a href="">
+                    <img src="{{ asset("bundles/layout/img/portfolio/fast.webp") }}" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}

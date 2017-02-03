@@ -1,0 +1,108 @@
+@import "../helper/variables";
+
+.portfolio-block {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10rem 2rem;
+    background-color: $color-primary;
+
+    @include on-min-width($tablet-width) {
+        padding: 20rem 2rem;
+    }
+
+    h3 {
+        padding: 0 3.6rem;
+
+        br {
+            display: inline-block;
+
+            @include on-min-width($tablet-width) {
+                display: none;
+            }
+        }
+    }
+
+    .content {
+        max-width: 48rem;
+        margin: 9rem auto 0;
+        text-align: center;
+        background-color: $color-primary;
+        box-shadow: 0 .1rem 2.5rem .4rem rgba($shadow, .3);
+
+        @include on-min-width($tablet-width) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 24.2rem;
+            min-width: initial;
+            max-width: none;
+            width: 74rem;
+        }
+
+        @include on-min-width($desktop-width) {
+            height: 32rem;
+            width: 98rem;
+        }
+
+        img {
+            min-width: 28rem;
+            width: 100%;
+            margin: -5rem auto;
+
+            @include on-min-width($tablet-width) {
+                height: 100%;
+                min-width: initial;
+                width: 24.6rem;
+                margin: 0;
+            }
+
+            @include on-min-width($desktop-width) {
+                width: 32.6rem;
+            }
+        }
+
+        a {
+            display: block;
+            position: relative;
+            height: 100%;
+            min-height: 15.6rem;
+            max-height: 45.6rem;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            @include on-min-width($tablet-width) {
+                height: 100%;
+                min-width: initial;
+                max-width: none;
+                width: 26.6rem;
+                overflow: visible;
+            }
+
+            @include on-min-width($desktop-width) {
+                width: 32.6rem;
+            }
+
+            &::before {
+                content: "";
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba($color-black, .2);
+                transition: opacity .4s ease 0s;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
