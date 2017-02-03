@@ -1,10 +1,24 @@
 .timeline {
     width: 100%;
     max-width: 100rem;
-    padding: 0 1rem;
+    padding: 2rem;
+    margin: 0 auto;
 
-    .timeline-entry + .timeline-entry {
-        margin-top: 3rem;
+    .timeline-entry {
+
+        h3 {
+            text-align: left;
+        }
+
+        + .timeline-entry {
+            margin-top: 3rem;
+        }
+
+        &:nth-child(even) {
+            h3 {
+                text-align: right;
+            }
+        }
     }
 
     @include on-min-width($tablet-width) {

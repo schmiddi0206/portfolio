@@ -29,12 +29,17 @@ nav {
         margin: 0 auto;
 
         @include on-min-width($tablet-width) {
-            justify-content: center;
             width: 60rem;
         }
 
         @include on-min-width($desktop-width) {
             width: 98rem;
+        }
+    }
+
+    .navigation-items {
+        @include on-min-width($tablet-width) {
+            margin: 0 auto;
         }
     }
 }
