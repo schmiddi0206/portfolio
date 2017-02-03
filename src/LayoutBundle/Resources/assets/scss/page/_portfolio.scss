@@ -1,0 +1,14 @@
+.portfolio {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: $color-primary;
+
+    .portfolio-grid {
+        padding: 7.6rem 0 15.3rem;
+
+        @include on-min-width($tablet-width) {
+            padding: 6.9rem 0 11.4rem;
+        }
+    }
+}
