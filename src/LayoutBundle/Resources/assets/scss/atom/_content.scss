@@ -1,0 +1,25 @@
+@import "../helper/variables";
+
+.content-row {
+    display: flex;
+    flex-direction: column;
+
+    @include on-min-width($tablet-width) {
+        margin: 0 auto;
+    }
+
+    + .content-row {
+        background-color: transparent;
+
+        @include on-min-width($tablet-width) {
+            padding: 2.5rem;
+            background-color: $color-primary;
+        }
+    }
+
+    .content-container {
+        @include on-min-width($tablet-width) {
+            transform: translateY(-50%);
+        }
+    }
+}

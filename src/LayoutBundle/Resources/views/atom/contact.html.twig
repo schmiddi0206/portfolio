@@ -37,14 +37,7 @@
                 </form>
             </div>
             <div class="content-row">
-                <ul class="social">
-                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-linkedin.png") }}" alt=""></a></li>
-                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-tumblr.png") }}" alt=""></a></li>
-                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-gplus.png") }}" alt=""></a></li>
-                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-twitter.png") }}" alt=""></a></li>
-                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-instagram.png") }}" alt=""></a></li>
-                    <li><a href=""><img src="{{ asset("bundles/layout/img/icons/icon-facebook.png") }}" alt=""></a></li>
-                </ul>
+                {% include '@Layout/atom/social.html.twig' with {'raw': true} %}
             </div>
         </div>
     </div>
