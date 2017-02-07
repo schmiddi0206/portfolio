@@ -1,6 +1,10 @@
 @import "../helper/variables";
 @import "../helper/_mixins.scss";
 
+* {
+    transition: all .4s ease 0s;
+}
+
 html {
     // normalize font size, so that 1rem = 10px
     font-size: 62.5%;
