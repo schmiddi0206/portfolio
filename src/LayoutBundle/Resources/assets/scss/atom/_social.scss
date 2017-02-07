@@ -10,15 +10,8 @@
 
     @include on-min-width($tablet-width) {
         margin: 0 auto;
+        width: 32rem;
         max-width: 94rem;
-    }
-
-    li + li {
-        margin-left: 1rem;
-
-        @include on-min-width($tablet-width) {
-            margin-left: 1.5rem;
-        }
     }
 
     a {
@@ -48,5 +41,29 @@
             font-size: 3rem;
         }
     }
+
+    &.sharing {
+        @include on-min-width($tablet-width) {
+            width: 100%;
+        }
+
+        a {
+            width: 4.2rem;
+            height: 4.2rem;
+
+            @include on-min-width($tablet-width) {
+                width: 1.7rem;
+                height: 1.7rem;
+            }
+        }
+
+        i {
+            font-size: 4.2rem;
+            color: $color-black;
+
+            @include on-min-width($tablet-width) {
+                font-size: 1.7rem;
+            }
+        }
     }
 }
