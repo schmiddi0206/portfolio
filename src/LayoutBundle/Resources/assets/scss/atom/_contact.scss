@@ -1,3 +1,4 @@
+@import "../helper/mixins";
 @import "../helper/variables";
 
 .contact {
@@ -42,6 +43,15 @@
             @include on-min-width($tablet-width) {
                 width: 50%;
                 max-width: 27rem;
+            }
+
+            * {
+                padding-bottom: 1em;
+                letter-spacing: .04em;
+            }
+
+            *:last-child:not(.button) {
+                padding-bottom: 0;
             }
         }
     }
