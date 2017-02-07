@@ -10,7 +10,10 @@
 
     .content-row {
         @include on-min-width($tablet-width) {
-            padding: 9rem;
+            padding: 0 4.5rem 4.5rem;
+        }
+        @include on-min-width($desktop-width) {
+            padding: 0 9rem 9rem;
         }
     }
 }

@@ -1,0 +1,17 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <div class="project-navigation">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <i class="fa fa-share-square-o share" aria-hidden="true">
+            {% include '@Layout/atom/sharing.html.twig' with {'raw': true} %}
+        </i>
+        <div class="items">
+            <i class="fa fa-expand fullscreen is-active" aria-hidden="true"></i>
+            <i class="fa fa-compress fullscreen" aria-hidden="true"></i>
+            <i class="fa fa-minus plusminus is-active" aria-hidden="true"></i>
+            <i class="fa fa-plus plusminus" aria-hidden="true"></i>
+            <i class="fa fa-chevron-left disabled" aria-hidden="true"></i>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}

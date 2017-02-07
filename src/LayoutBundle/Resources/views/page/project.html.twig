@@ -3,6 +3,7 @@
         <div class="content-container">
             <div class="content-row">
                 <div class="content">
+                    {% include '@Layout/atom/project-navigation.html.twig' with {'raw': true} %}
                     {% include '@Layout/molecule/detail.html.twig' with {'raw': true} %}
                 </div>
             </div>

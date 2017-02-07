@@ -2,6 +2,7 @@
 @import "../helper/variables";
 
 .detail {
+    overflow: hidden;
     background-color: $color-white;
 
     @include on-min-width($tablet-width) {
@@ -13,6 +14,10 @@
         @include on-min-width($tablet-width) {
             width: 50%;
             height: 50%;
+        }
+
+        &:not(.description-visible) {
+            margin: 0 auto;
         }
     }
 
@@ -48,7 +53,16 @@
         padding: 2rem;
 
         @include on-min-width($tablet-width) {
-            width: 31rem;
+            max-width: 0;
+            padding: 0;
+            transform: translateX(40rem);
+        }
+
+        &.description-visible {
+            @include on-min-width($tablet-width) {
+                max-width: 31rem;
+                transform: translateX(0);
+            }
         }
     }
 }
