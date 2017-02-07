@@ -1,0 +1,16 @@
+@import "../helper/variables";
+
+.project {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $color-white;
+
+    .content-row {
+        @include on-min-width($tablet-width) {
+            padding: 9rem;
+        }
+    }
+}

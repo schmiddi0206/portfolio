@@ -19,10 +19,14 @@
 
 // Molecule
 @import "molecule/content-block";
+@import "molecule/detail";
 @import "molecule/footer";
 @import "molecule/navigation";
 @import "molecule/portfolio-block";
 @import "molecule/timeline";
+
+// Page
+@import "page/project";
 
 // Template
 @import "template/default";

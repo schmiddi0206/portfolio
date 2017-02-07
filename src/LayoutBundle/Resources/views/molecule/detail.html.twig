@@ -1,0 +1,15 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <div class="detail">
+        <figure>
+            <img src="{{ asset("bundles/layout/img/portfolio/deep.gif") }}" alt="" />
+        </figure>
+
+        <div class="description">
+            <h3>Project</h3>
+            <p>
+                Describe your image here. Click me and then “Organize Images” to change my text.
+            </p>
+            {% include '@Layout/atom/social.html.twig' with {'raw': true} %}
+        </div>
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}

@@ -1,0 +1,11 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <div class="project">
+        <div class="content-container">
+            <div class="content-row">
+                <div class="content">
+                    {% include '@Layout/molecule/detail.html.twig' with {'raw': true} %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}
