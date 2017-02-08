@@ -16,6 +16,7 @@ body {
     font-size: 1.6rem;
     color: $color-text;
     background-color: $color-primary;
+    position: relative;
 
     &.is-active {
         overflow: hidden;
@@ -28,7 +29,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     @include roboto-bold();
     text-transform: uppercase;
     line-height: 1.4em;
@@ -71,7 +73,9 @@ h3 {
 
 }
 
+h4,
 p {
+    @include roboto-regular();
     font-size: 1.5rem;
     line-height: 1.9em;
 }

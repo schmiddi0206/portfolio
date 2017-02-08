@@ -23,10 +23,12 @@
 @import "molecule/footer";
 @import "molecule/navigation";
 @import "molecule/portfolio-block";
+@import "molecule/portfolio-grid";
 @import "molecule/timeline";
 
 // Page
 @import "page/project";
+@import "page/portfolio";
 
 // Template
 @import "template/default";
