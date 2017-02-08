@@ -1,0 +1,95 @@
+@import "../helper/mixins";
+@import "../helper/variables";
+
+.project-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    @include on-min-width($tablet-width) {
+        height: 9rem;
+        padding: 0;
+    }
+
+    i {
+        color: $color-gray;
+        font-size: 4.2rem;
+        cursor: pointer;
+
+        @include on-min-width($tablet-width) {
+            font-size: 1.7rem;
+        }
+
+        &:hover {
+            color: $color-dark;
+
+            .sharing {
+                max-width: 31rem;
+                padding-left: 5rem;
+
+                i {
+                    color: $color-black;
+                }
+            }
+        }
+
+        &.fullscreen,
+        &.plusminus {
+            display: none;
+
+            &.is-active {
+                display: block;
+            }
+        }
+
+        &.disabled {
+            color: $color-light;
+        }
+
+        &.fa-arrow-left {
+            display: block;
+
+            @include on-min-width($tablet-width) {
+                display: none;
+            }
+        }
+
+        .sharing {
+            display: none;
+            max-width: 0;
+            padding: 0;
+
+            @include on-min-width($tablet-width) {
+                display: inline-flex;
+            }
+
+            i {
+                @include on-min-width($tablet-width) {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    .share {
+        display: none;
+
+        @include on-min-width($tablet-width) {
+            display: block;
+            width: 50%;
+        }
+    }
+
+    .items {
+        display: none;
+
+        @include on-min-width($tablet-width) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 31rem;
+        }
+    }
+}

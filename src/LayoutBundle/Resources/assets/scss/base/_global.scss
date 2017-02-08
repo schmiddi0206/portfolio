@@ -1,6 +1,10 @@
 @import "../helper/variables";
 @import "../helper/_mixins.scss";
 
+* {
+    transition: all .4s ease 0s;
+}
+
 html {
     // normalize font size, so that 1rem = 10px
     font-size: 62.5%;
@@ -12,7 +16,6 @@ body {
     font-size: 1.6rem;
     color: $color-text;
     background-color: $color-primary;
-    position: relative;
 
     &.is-active {
         overflow: hidden;

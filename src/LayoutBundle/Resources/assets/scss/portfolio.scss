@@ -13,10 +13,13 @@
 @import "atom/logo";
 @import "atom/navigation-items";
 @import "atom/page-section";
+@import "atom/project-navigation";
+@import "atom/social";
 @import "atom/timeline-entry";
 
 // Molecule
 @import "molecule/content-block";
+@import "molecule/detail";
 @import "molecule/footer";
 @import "molecule/navigation";
 @import "molecule/portfolio-block";
@@ -24,7 +27,9 @@
 @import "molecule/timeline";
 
 // Page
+@import "page/project";
 @import "page/portfolio";
+@import "page/project";
 
 // Template
 @import "template/default";

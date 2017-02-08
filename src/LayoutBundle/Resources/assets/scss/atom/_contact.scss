@@ -1,3 +1,4 @@
+@import "../helper/mixins";
 @import "../helper/variables";
 
 .contact {
@@ -6,99 +7,52 @@
     background: url("../img/contact-bg.jpg");
     background-size: cover;
 
-    .content-row {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-        background-color: $color-primary;
-
-        + .content-row {
-            background-color: transparent;
-        }
-    }
-
-    .content {
-        text-align: center;
+    @include on-min-width($tablet-width) {
+        padding: 0;
     }
 
     .form {
         margin-top: 2rem;
         background-color: $color-primary;
-    }
 
-    .social {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 2rem 0;
-
-        li + li {
-            margin-left: 1rem;
-        }
-
-        a {
-            display: block;
-            width: 4.2rem;
-            height: 4.2rem;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
+        @include on-min-width($tablet-width) {
+            width: 50%;
+            margin-top: 0;
+            max-width: 31rem;
+            margin-left: 6rem;
         }
     }
 
     @include on-min-width($tablet-width) {
         padding: 3rem 2rem;
+    }
 
-        .content-row {
-            flex-direction: row;
+    .content-row {
+        padding: 2rem;
+        background-color: $color-primary;
+
+        @include on-min-width($tablet-width) {
             max-width: 94rem;
+            flex-direction: row;
             padding: 10rem 10rem 5rem;
-            margin: 0 auto;
-
-            + .content-row {
-                padding: 2.5rem;
-                background-color: $color-primary;
-            }
-        }
-
-        .content,
-        .form {
-            width: 50%;
         }
 
         .content {
-            max-width: 27rem;
-        }
+            text-align: center;
 
-        .form {
-            margin-top: 0;
-            max-width: 31rem;
-            margin-left: 6rem;
-        }
-
-        .social {
-            margin: 0 auto;
-            max-width: 94rem;
-
-            li + li {
-                margin-left: 1.5rem;
+            @include on-min-width($tablet-width) {
+                width: 50%;
+                max-width: 27rem;
             }
 
-            a {
-                width: 3.0rem;
-                height: 3.0rem;
+            * {
+                padding-bottom: 1em;
+                letter-spacing: .04em;
             }
-        }
-    }
 
-    @include on-min-width($desktop-width) {
-        padding: 0;
-
-        .content-container {
-            transform: translateY(-50%);
+            *:last-child:not(.button) {
+                padding-bottom: 0;
+            }
         }
     }
 }

@@ -1,0 +1,69 @@
+@import "../helper/mixins";
+@import "../helper/variables";
+
+.social {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    @include on-min-width($tablet-width) {
+        margin: 0 auto;
+        width: 32rem;
+        max-width: 94rem;
+    }
+
+    a {
+        display: block;
+        width: 4.2rem;
+        height: 4.2rem;
+
+        @include on-min-width($tablet-width) {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        &:hover {
+            i {
+                color: $color-gray;
+            }
+        }
+    }
+
+    i {
+        width: 100%;
+        font-size: 4.2rem;
+        color: $color-white;
+        text-align: center;
+
+        @include on-min-width($tablet-width) {
+            font-size: 3rem;
+        }
+    }
+
+    &.sharing {
+        @include on-min-width($tablet-width) {
+            width: 100%;
+        }
+
+        a {
+            width: 4.2rem;
+            height: 4.2rem;
+
+            @include on-min-width($tablet-width) {
+                width: 1.7rem;
+                height: 1.7rem;
+            }
+        }
+
+        i {
+            font-size: 4.2rem;
+            color: $color-black;
+
+            @include on-min-width($tablet-width) {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
