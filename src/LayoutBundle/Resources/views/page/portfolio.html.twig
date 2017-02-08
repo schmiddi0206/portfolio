@@ -1,0 +1,7 @@
+{% if raw is not defined or not raw %}<div style="width: 100%;">{% endif %}
+    <div class="portfolio">
+        {% include '@Layout/molecule/navigation.html.twig' with {'raw': true} %}
+        {% include '@Layout/molecule/portfolio-grid.html.twig' with {'raw': true} %}
+        {% include '@Layout/molecule/footer.html.twig' with {'raw': true} %}
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}
