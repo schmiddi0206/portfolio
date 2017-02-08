@@ -12,6 +12,11 @@
     transition: border-color .4s ease 0s, background-color .4s ease 0s;
     min-width: 20rem;
 
+    &:hover {
+        background-color: transparent;
+        color: $color-text;
+    }
+
     &.button-primary {
         background-color: transparent;
         color: $color-text;
