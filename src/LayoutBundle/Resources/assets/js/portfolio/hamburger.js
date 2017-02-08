@@ -39,7 +39,8 @@ class Hamburger
     toggleNavigation (event)
     {
         $(event.currentTarget).toggleClass('is-active');
-        $(event.currentTarget).parent().find(".navigation-items")
+        $(event.currentTarget).parent()
+            .find(".navigation-items")
             .toggleClass('is-active');
         $('body').toggleClass('is-active');
     }

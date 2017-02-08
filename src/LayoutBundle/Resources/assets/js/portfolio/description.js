@@ -29,7 +29,7 @@ class Description
         }
 
         this.$button
-            .on("click", (event) => this.toggleDescription());
+            .on("click", () => this.toggleDescription());
     }
 
     /**
