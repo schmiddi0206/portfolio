@@ -6,10 +6,8 @@
     width: 100%;
     background: url("../img/contact-bg.jpg");
     background-size: cover;
-
-    @include on-min-width($tablet-width) {
-        padding: 0;
-    }
+    background-position: center 35rem;
+    background-repeat: no-repeat;
 
     .form {
         margin-top: 2rem;
@@ -24,7 +22,7 @@
     }
 
     @include on-min-width($tablet-width) {
-        padding: 3rem 2rem;
+        padding: 3rem 2rem 23rem;
     }
 
     .content-row {

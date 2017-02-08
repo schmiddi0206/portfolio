@@ -1,6 +1,15 @@
 {% include '@Layout/molecule/navigation.html.twig' with {'raw': true} %}
 
-<section class="page-section">
+<section class="page-section header-section">
+    <div class="headline">
+        <h1>I<span class="accent">'</span>m<br/>Firstname<br/>Lastname<span class="accent">.</span></h1>
+        <h3>UX/UI Designer & Web Developer</h3>
+    </div>
+
+    {% include '@Layout/molecule/content-block.html.twig' with {'raw': true} %}
+</section>
+
+<section class="page-section professional-section">
     <div class="headline">
         <h2><span>01</span> Professional</h2>
         <h3>My knowledge level in software</h3>

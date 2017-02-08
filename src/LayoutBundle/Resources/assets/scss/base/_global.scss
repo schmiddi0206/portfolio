@@ -15,7 +15,7 @@ body {
     @include roboto-regular();
     font-size: 1.6rem;
     color: $color-text;
-    background-color: $color-primary;
+    background-color: $color-gray-dark;
 
     &.is-active {
         overflow: hidden;
@@ -48,6 +48,7 @@ h4 {
 
 h1 {
     font-size: 6.5rem;
+    letter-spacing: 1.4rem;
 }
 
 h2 {
@@ -82,4 +83,8 @@ p {
 a {
     color: $color-light;
     text-decoration: none;
+}
+
+.accent {
+    color: $accent;
 }

@@ -6,7 +6,7 @@
     position: relative;
 
     .headline {
-        margin: 9rem 0 5rem;
+        padding: 9rem 0 5rem;
 
         h3 {
             text-align: center;
@@ -23,8 +23,23 @@
         }
 
         @include on-min-width($tablet-width) {
-            margin: 20rem 0 10rem;
+            padding: 20rem 0 10rem;
         }
+    }
+
+    &.header-section {
+        h1,
+        h3 {
+            width: 50rem;
+            margin: 0 auto;
+            padding: 0;
+            text-align: left;
+        }
+    }
+
+    &.professional-section {
+        background: url("../img/contact-bg.jpg");
+        background-size: cover;
     }
 
     &.timeline-section {
@@ -35,5 +50,14 @@
         @include on-min-width($desktop-width) {
             padding-bottom: 40rem;
         }
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+        margin-bottom: -35rem;
+    }
+
+    &:nth-child(3) {
+        padding-top: 35rem;
     }
 }
