@@ -16,7 +16,6 @@ body {
     font-size: 1.6rem;
     color: $color-text;
     background-color: $color-primary;
-    position: relative;
 
     &.is-active {
         overflow: hidden;
