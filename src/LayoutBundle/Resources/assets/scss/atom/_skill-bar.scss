@@ -1,0 +1,79 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+.skill-bar {
+    $bar-container-width: 13rem;
+
+    width: 100%;
+    transition-property: width, background-color;
+    clear: both;
+    display: block;
+    @include clearfix;
+
+    .skill-name,
+    .bar,
+    .percentage {
+        float: left;
+        font-size: 1.5rem;
+        line-height: 1.9em;
+        color: $color-light;
+    }
+
+    .skill-name {
+        width: $bar-container-width;
+        margin: 1rem;
+        text-align: right;
+    }
+
+    .bar-container {
+        width: calc(100% - 15rem);
+        float: left;
+        @include clearfix;
+
+        .bar {
+            background-color: $color-green;
+            display: block;
+            height: 1rem;
+            width: 0;
+            max-width: calc(100% - #{$bar-container-width});
+            margin: 1.9rem 0;
+            transition: width 3s;
+            transition-timing-function: ease-in;
+        }
+
+        .percentage {
+            margin: 1rem;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill-bar {
+        padding: 1rem 0;
+
+        .skill-name {
+            width: calc(100% - #{2 * 2.5rem});
+            text-align: left;
+            margin: 0 2.5rem;
+        }
+
+        .bar-container {
+            width: calc(100% - #{2 * 2.5rem});
+            margin: 0 2.5rem;
+
+            .bar {
+                max-width: calc(100% - 5rem);
+                background-color: $color-green;
+                margin: .9rem 0;
+                transition: none;
+            }
+
+            .percentage {
+                width: auto;
+                margin: 0 0 0 1rem;
+                text-align: left;
+            }
+        }
+    }
+}
