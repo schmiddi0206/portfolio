@@ -1,0 +1,10 @@
+{% if raw is not defined or not raw %}<div style="width: 100vw; background-color: #333b50">{% endif %}
+    {% set progress = 100 %}
+    <div class="skill-bar" data-percent="{{ progress }}%">
+        <p class="skill-name">Coolness: </p>
+        <div class="bar-container">
+            <div class="bar"></div>
+            <p class="percentage">{{ progress }}%</p>
+        </div>
+    </div>
+{% if raw is not defined or not raw %}</div>{% endif %}
