@@ -1,7 +1,7 @@
 {
   "private": true,
   "devDependencies": {
-    "kaba": "^1.1.1"
+    "kaba": "^1.3.0"
   },
   "dependencies": {
     "samos": "git://github.com/becklyn/samos#d0cbb87"
